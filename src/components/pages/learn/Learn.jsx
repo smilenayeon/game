@@ -10,13 +10,6 @@ import "./Learn.css";
 function Learn() {
   const navigate = useNavigate();
   const { dataItems } = useContext(DataContext);
-  const settings = {
-    dots: true, // Shows dot indicators
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1, // Number of slides to show at once
-    slidesToScroll: 1
-  };
 
   return (
     <div className="learn-page">
@@ -28,7 +21,7 @@ function Learn() {
         <i className="fa-solid fa-arrow-right" />
       </p>
       <div className="card-spot">
-        <Slider>
+      <Slider>
           {dataItems.map(({ word, image, sentence }, index) =>
             <Card key={index} word={word} image={image} sentence={sentence} />
           )}
@@ -37,8 +30,8 @@ function Learn() {
           <h1>Now you are ready to play the game!</h1>
             <button onClick={() => navigate("/game")}>Start Game!</button>
           </div>
-         
         </Slider>
+       
       </div>
     </div>
   );

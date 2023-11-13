@@ -1,14 +1,15 @@
 .learn-page{
     background-color:antiquewhite;
-    height:100vh;
-   
+    min-height: 100vh; 
+    
+    
 }
 
 .learn-page-title {
     background-color:#FFAE00;
     color:rgb(253, 243, 243);
     font-size: 3rem;
-    margin-top:0;
+    margin:0;
     padding: 3vh 0 3vh 3vh;
     text-shadow: -1px -1px 0 #000,  
 1px -1px 0 #000,
@@ -28,9 +29,8 @@
 }
 
 .slide-to-game{
-padding-top:10%;
+padding:10% 0;
 color:#FFAE00;
-
 text-align: center;
 }
 

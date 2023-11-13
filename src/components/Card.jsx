@@ -5,10 +5,12 @@ function Card({word,image,sentence,index}) {
   return (
     <div className="card" key={index}>
 
-      <div className="card-image"><img src={image} alt={word}/></div>
+      
+        <img className="card-image"src={image} alt={word}/>
+    
       <div className="card-text">
-      <h1 className="card-word">{word}</h1>
-      <h2 className="card-sentence">{sentence}</h2>
+        <h1 className="card-word">{word}</h1>
+        <h2 className="card-sentence">{sentence}</h2>
       </div>
 
     </div>
