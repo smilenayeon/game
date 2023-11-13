@@ -1,0 +1,27 @@
+.learn-page{
+    background-color:antiquewhite;
+    height:100vh;
+   
+}
+
+.learn-page-title {
+    background-color:#FFAE00;
+    color:rgb(253, 243, 243);
+    font-size: 3rem;
+    margin-top:0;
+    padding: 3vh 0 3vh 3vh;
+}
+.learn-instruction{
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:600;
+    color:#9D4ED5;
+    background-color:rgb(247, 215, 177);
+    padding:2%;
+}
+.card-spot{
+    padding:0 10%;
+}
+
+
+
