@@ -32,10 +32,12 @@ function Learn() {
           {dataItems.map(({ word, image, sentence }, index) =>
             <Card key={index} word={word} image={image} sentence={sentence} />
           )}
-          <div>
-            <h1>Now you are ready to play the game!</h1>
+        
+          <div className="slide-to-game">
+          <h1>Now you are ready to play the game!</h1>
             <button onClick={() => navigate("/game")}>Start Game!</button>
           </div>
+         
         </Slider>
       </div>
     </div>

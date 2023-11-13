@@ -10,6 +10,10 @@
     font-size: 3rem;
     margin-top:0;
     padding: 3vh 0 3vh 3vh;
+    text-shadow: -1px -1px 0 #000,  
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
 }
 .learn-instruction{
     font-size: 1rem;
@@ -23,5 +27,23 @@
     padding:0 10%;
 }
 
+.slide-to-game{
+padding-top:10%;
+color:#FFAE00;
 
+text-align: center;
+}
+
+.slide-to-game button{
+    font-size: 2rem;
+    font-weight: 700;
+    padding:3%;
+    margin:0;
+    background-color: #FFAE00;
+    border-radius: 10px;
+   
+}
+.slide-to-game button:hover{
+     box-shadow: 0 0 30px rgb(255, 119, 0);
+}
 
