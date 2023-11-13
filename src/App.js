@@ -1,9 +1,13 @@
-
+import React from 'react';
 import './App.css';
+import DataProvider from './components/DataContext';
+import Learn from './components/pages/Learn';
 
 function App() {
   return (
-  <h1>test</h1>
+  <DataProvider>
+ <Learn/>
+ </DataProvider>
   );
 }
 

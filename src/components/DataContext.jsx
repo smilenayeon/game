@@ -6,7 +6,7 @@ import Friends from "../assets/images/friends.jpg";
 import Happy from "../assets/images/happy.jpg";
 import Puppy from "../assets/images/puppy.jpg";
 import Snowman from "../assets/images/snowman.jpg";
-import TeddyBear from "../assets/images/Christmas.jpg";
+import TeddyBear from "../assets/images/teddybear.jpg";
 
 //data for word set
  
@@ -37,7 +37,7 @@ import TeddyBear from "../assets/images/Christmas.jpg";
   ];
   const [time, setTime] = useState(0);
   const [attemptCount, setAttemptCount]=useState(0);
-  
+
   const contextValue = { dataItems, time, attemptCount, setTime, setAttemptCount };
 
   return (
