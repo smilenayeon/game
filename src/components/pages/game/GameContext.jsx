@@ -1,5 +1,6 @@
 import React,{createContext, useState,useEffect} from "react";
 
+
 export const GameContext= createContext();
 
 
@@ -11,6 +12,8 @@ export const GameContext= createContext();
     const [isMatched,setIsMatched]=useState(false);
     const [isFlipped, setIsFlipped]=useState(false);
     const [matchedCards, setMatchedCards]=useState([]);
+    const [time, setTime]=useState(0);
+ 
 
     const handleCardClick = (cardKey, matchKey) => {
         if (flippedCards.length < 2) {
@@ -43,6 +46,15 @@ export const GameContext= createContext();
         }
         setFlippedCards([]);
     };
+
+    const startTime = () => {
+        return setInterval(() => {
+            setTime(prevTime => prevTime + 1);
+        }, 1000);
+    };
+  
+   
+
     const contextValue = {
         attemptCount,
         setAttemptCount,
@@ -55,6 +67,9 @@ export const GameContext= createContext();
         setIsFlipped,
         matchedCards,
         setMatchedCards,
+        time,
+        setTime,
+        startTime
     };
 
     return(

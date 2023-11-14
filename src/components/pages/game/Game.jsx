@@ -9,19 +9,14 @@ import "./Game.css";
 function Game() {
     const navigate=useNavigate();
     const {dataItems}=useContext(DataContext);
-    const {attemptCount,handleCardClick, matchedCards,isFlipped}=useContext(GameContext);
+    const {setAttemptCount,attemptCount,handleCardClick,isFlipped,setIsFlipped,matchedCards,setMatchedCards,setTime,time,startTime }=useContext(GameContext);
     const wordDeck= dataItems.map((dataItem)=>({...dataItem, type:"word"}));
     const sentenceDeck=dataItems.map((dataItem)=>({...dataItem, type:"sentence"}));
     const gameCards= wordDeck.concat(sentenceDeck);
-    const [time,setTime]=useState(0);
+  
     
     const onCardClick = (cardKey,matchKey) => handleCardClick(cardKey,matchKey);
-    
-    const startTime = () => {
-      return setInterval(() => {
-          setTime(prevTime => prevTime + 1);
-      }, 1000);
-  };
+   
 
     useEffect(() => {
       const interval = startTime(); 
@@ -30,9 +25,22 @@ function Game() {
           clearInterval(interval); 
       };
   }, []);
+ 
+  if (matchedCards.length ===16){
+    setMatchedCards([]);
+    setIsFlipped(false);
+    navigate("/result");
+  }
+
+  const learnAgain=()=>{
+    navigate("/");
+    setAttemptCount(0);
+    setTime(0);
+    setIsFlipped(false);
+    setMatchedCards([]);
+  }
 
 
-    matchedCards.length=== 16 && navigate("/result");
 
 
 
@@ -55,7 +63,7 @@ function Game() {
     <p>Click to match</p>
     <h3>Time: {time}s</h3>
     <h3>Attempt: {attemptCount}</h3>
-    <button className="learn-again-button" onClick={()=>{navigate("/")}}>Learn again</button>
+    <button className="learn-again-button" onClick={learnAgain}>Learn again</button>
     </div>
 
     </div>
