@@ -1,6 +1,8 @@
 import React,{useContext} from 'react';
 import {GameContext} from '../game/GameContext';
 import { useNavigate } from 'react-router-dom';
+import "./Result.css";
+import Trophy from "../../../assets/images/trophy.png";
 
 function Result() {
     const navigate=useNavigate();
@@ -23,12 +25,15 @@ function Result() {
       }
 
   return (
-    <div>
-    Result
-    <h2>Time: {time}s</h2>
-    <h2>Attempt: {attemptCount}</h2>
-    <button onClick={playGame}>Play Game</button>
-    <button onClick={learnAgain}>Learn Again</button>
+    <div className="result-page">
+    <div className="result-text">
+    <h1 className="result-title">Result</h1>
+    <h2 className="result-time">Time: {time}s</h2>
+    <h2 className="result-attempt">Attempt: {attemptCount}</h2>
+    <button className="play-again" onClick={playGame}>Play Again</button>
+    <button className="learn-again" onClick={learnAgain}>Learn Again</button>
+    </div>
+    <img src={Trophy} alt="trophy"/>
 
     </div>
   )
