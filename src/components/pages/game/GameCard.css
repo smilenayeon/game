@@ -1,0 +1,10 @@
+.game-card {
+    width: 100px; /* adjust as necessary */
+    height: 100px; /* adjust as necessary */
+    perspective: 1000px; /* gives a 3D effect */
+    background-color: purple;
+  }
+  
+  .game-card.flipped {
+    background-color: blue;
+  }

@@ -1,13 +1,13 @@
 import React from 'react';
+import "./GameCard.css";
 
 
-function GameCard({cardKey,matchKey,content,onCardClick,isFlipped}) {
-
+function GameCard({cardKey, matchKey, content, onCardClick, isFlipped}) {
   return (
-    <div className={`game-card ${isFlipped===true ? 'flipped' : ''}`} onClick={onCardClick}>
-    <h1>{content}</h1>
-    </div>
-  )
+      <div className={`game-card ${isFlipped[cardKey] ? 'flipped' : ''}`} onClick={() => onCardClick(cardKey,matchKey)}>
+          <h1>{content}</h1>
+      </div>
+  );
 }
 
 export default GameCard
