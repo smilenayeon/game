@@ -7,10 +7,11 @@ import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
 import "./Learn.css";
 
+
 function Learn() {
   const navigate = useNavigate();
   const { dataItems } = useContext(DataContext);
-
+ 
   return (
     <div className="learn-page">
       <h1 className="learn-page-title"> Let's learn!</h1>
@@ -27,8 +28,8 @@ function Learn() {
           )}
         
           <div className="slide-to-game">
-          <h1>Now you are ready to play the game!</h1>
-            <button onClick={() => navigate("/game")}>Start Game!</button>
+          <h1>Are ready to play the game?</h1>
+            <button onClick={() => {navigate("/game")}}>Start Game!</button>
           </div>
         </Slider>
        
