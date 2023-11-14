@@ -3,6 +3,7 @@ import { DataContext } from '../../DataContext';
 import { useNavigate } from 'react-router-dom';
 import GameCard from './GameCard';
 import {GameContext} from './GameContext';
+import "./Game.css";
 
 
 function Game() {
@@ -36,12 +37,8 @@ function Game() {
 
 
   return (
-    <div>
-    <h1>Matching Game</h1>
-    <p>Click to filp the cards. Find the correct pairs.</p>
-    <h3>Time:{time} second</h3>
-    <h3>Attempted:{attemptCount} times</h3>
-    <button onClick={()=>{navigate("/")}}>Learn again</button>
+    <div className="game">
+    
 
     <div className="card-stage">
       {gameCards.map((gameCard, index)=> (<GameCard
@@ -51,6 +48,14 @@ function Game() {
     onCardClick={onCardClick}
     isFlipped={isFlipped} // Pass the entire isFlipped object
 />))}
+    </div>
+
+    <div  className="side-info">
+    <h1 className="game-title">Matching Game</h1>
+    <p>Click to match</p>
+    <h3>Time: {time}s</h3>
+    <h3>Attempt: {attemptCount}</h3>
+    <button className="learn-again-button" onClick={()=>{navigate("/")}}>Learn again</button>
     </div>
 
     </div>
