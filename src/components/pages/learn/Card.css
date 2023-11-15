@@ -15,11 +15,22 @@
 .card-word{
     font-size: 1.5rem;
     border-top:2px solid #FFAE00;
-    border-bottom: 2px solid #FFAE00;;
+    border-bottom: 2px solid #FFAE00;
+    display: flex;
+    align-items: center;
+    gap:3%;
 }
 
 .audio-button{
-    background-color: #FFF588;
+    background-color: #FFAE00;
+    font-size:1.6rem;
+    color:#FFF588;
+}
+
+.audio-button:hover{
+    background-color: #FFAE00;
+    color:purple;
+    box-shadow: 0 0 30px purple;
 }
 
 .card-sentence{
@@ -41,6 +52,8 @@
     .card-title{
         font-size: 2rem;
     }
+    .audio-button{
+        font-size:2rem;}
 }
 
 @media(min-width: 600px){
@@ -61,6 +74,8 @@
 .card-word{
     font-size: 3rem;
 }
+.audio-button{
+    font-size:3rem;}
 .card-sentence{
     font-size: 2.5rem;
 }
