@@ -33,7 +33,7 @@ function Result() {
     <button className="play-again" onClick={playGame}>Play Again</button>
     <button className="learn-again" onClick={learnAgain}>Learn Again</button>
     </div>
-    <img src={Trophy} alt="trophy"/>
+    <img className="result-image" src={Trophy} alt="trophy"/>
 
     </div>
   )

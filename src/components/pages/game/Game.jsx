@@ -1,4 +1,4 @@
-import React,{useContext, useEffect,useState}  from 'react';
+import React,{useContext, useEffect, useState}  from 'react';
 import { DataContext } from '../../DataContext';
 import { useNavigate } from 'react-router-dom';
 import GameCard from './GameCard';
@@ -12,7 +12,23 @@ function Game() {
     const {setAttemptCount,attemptCount,handleCardClick,isFlipped,setIsFlipped,matchedCards,setMatchedCards,setTime,time,startTime }=useContext(GameContext);
     const wordDeck= dataItems.map((dataItem)=>({...dataItem, type:"word"}));
     const sentenceDeck=dataItems.map((dataItem)=>({...dataItem, type:"sentence"}));
-    const gameCards= wordDeck.concat(sentenceDeck);
+    const [gameCards, setGameCards]=useState([]);
+    const newCards= wordDeck.concat(sentenceDeck);
+
+    const shuffle=(array)=>{
+      let currentIndex=array.length, randomIndex;
+      while(currentIndex !== 0){
+        randomIndex=Math.floor(Math.random()*currentIndex);
+        currentIndex--;
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex], array[currentIndex]];
+  }
+  return array;
+      } 
+      
+    
+    useEffect(()=>{setGameCards(shuffle(newCards))},[]);
+
   
     
     const onCardClick = (cardKey,matchKey) => handleCardClick(cardKey,matchKey);

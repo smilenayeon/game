@@ -65,7 +65,7 @@
     transform: scale(1.1);
 }
 
-img{
+.result-image{
     max-width:300px;
     animation: rotate 1.5s ease-in-out ;
 }
