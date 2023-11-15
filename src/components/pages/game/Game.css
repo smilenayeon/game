@@ -43,7 +43,7 @@ align-items: baseline;}
 }
 
 @media (min-width:600px){
-    .game-title{ 
+    .game-title{
         font-size:2rem;
     }
     .side-info{
@@ -70,7 +70,6 @@ align-items: baseline;}
 @media (min-width:1200px){
     .card-stage{
         width:80%;
-      
     }
     .game{
         gap:2%;

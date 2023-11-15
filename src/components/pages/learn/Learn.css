@@ -1,47 +1,46 @@
-.learn-page{
-    background-color:antiquewhite;
-    min-height: 100vh; 
+.learn-page {
+  background-color: antiquewhite;
+  min-height: 100vh;
 }
 
 .learn-page-title {
-    background-color:#FFAE00;
-    color:rgb(253, 243, 243);
-    font-size: 3rem;
-    margin:0;
-    padding: 3vh 0 3vh 3vh;
-    text-shadow: -1px -1px 0 #000,  
-1px -1px 0 #000,
--1px 1px 0 #000,
-1px 1px 0 #000;
-}
-.learn-instruction{
-    font-size: 1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight:600;
-    color:#9D4ED5;
-    background-color:rgb(247, 215, 177);
-    padding:2%;
-}
-.card-spot{
-    padding:0 10%;
+  background-color: #ffae00;
+  color: rgb(253, 243, 243);
+  font-size: 3rem;
+  margin: 0;
+  padding: 3vh 0 3vh 3vh;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
-.slide-to-game{
-padding:10% 0;
-color:#FFAE00;
-text-align: center;
+.learn-instruction {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color: #9d4ed5;
+  background-color: rgb(247, 215, 177);
+  padding: 2%;
 }
 
-.slide-to-game button{
-    font-size: 2rem;
-    font-weight: 700;
-    padding:3%;
-    margin:0;
-    background-color: #FFAE00;
-    border-radius: 10px;
-   
-}
-.slide-to-game button:hover{
-     box-shadow: 0 0 30px rgb(255, 119, 0);
+.card-spot {
+  padding: 0 10%;
 }
 
+.slide-to-game {
+  padding: 10% 0;
+  color: #ffae00;
+  text-align: center;
+}
+
+.slide-to-game button {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 3%;
+  margin: 0;
+  background-color: #ffae00;
+  border-radius: 10px;
+}
+
+.slide-to-game button:hover {
+  box-shadow: 0 0 30px rgb(255, 119, 0);
+}
