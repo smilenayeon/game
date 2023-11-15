@@ -18,6 +18,10 @@
     border-top:2px solid #FFAE00;
     border-bottom: 2px solid #FFAE00;;
 }
+.audio-button{
+    background-color: #FFF588;
+    
+}
 .card-sentence{
     margin:0;
     font-size: 1.3rem;

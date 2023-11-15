@@ -37,10 +37,9 @@ import TeddyBear from "../assets/images/teddybear.jpg";
     new Data("7", "snowman", Snowman, "We build a _______ on a snowy day."),
     new Data("8","teddy bear",TeddyBear,"His favorite toy is the brown __________.")
   ];
-  const [time, setTime] = useState(0);
-  const [attemptCount, setAttemptCount]=useState(0);
+ 
 
-  const contextValue = { dataItems, time, attemptCount, setTime, setAttemptCount };
+  const contextValue = { dataItems};
 
   return (
     <DataContext.Provider value={contextValue}>
@@ -51,4 +50,3 @@ import TeddyBear from "../assets/images/teddybear.jpg";
 
 
 export default DataProvider;
-

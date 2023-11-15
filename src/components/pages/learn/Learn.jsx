@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { DataContext } from "../../DataContext";
-import Card from "../../Card";
+import Card from "./Card";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
