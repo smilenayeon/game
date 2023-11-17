@@ -27,12 +27,7 @@ const DataProvider = ({ children }) => {
   }
 
   const dataItems = [
-    new Data(
-      "1",
-      "Christmas",
-      Christmas,
-      "I celebrate _________ with my family."
-    ),
+    new Data("1","Christmas",Christmas,"I celebrate _________ with my family."),
     new Data("2", "dance", Dance, "She can _____ to the music."),
     new Data("3", "donuts", Donuts, "We each had two ______ for dessert."),
     new Data("4","friends",Friends,"These _______ took a joyful group selfie."),

@@ -35,6 +35,7 @@ align-items: baseline;}
     text-shadow: 0 2px 0 rgb(240, 219, 219);
     box-shadow: 0 5px rgb(164, 161, 161);
     padding:3%;
+    cursor: pointer;
 
 }
 .learn-again-button:hover{

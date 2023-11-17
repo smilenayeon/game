@@ -39,6 +39,7 @@
   margin: 0;
   background-color: #ffae00;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .slide-to-game button:hover {

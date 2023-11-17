@@ -25,6 +25,7 @@
     background-color: #FFAE00;
     font-size:1.6rem;
     color:#FFF588;
+    cursor: pointer;
 }
 
 .audio-button:hover{

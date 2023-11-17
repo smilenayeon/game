@@ -46,7 +46,7 @@ const GameContextProvider = ({ children }) => {
           [flippedCard1.cardKey]: false,
           [flippedCard2.cardKey]: false
         }));
-      }, 800);
+      }, 400);
     }
     setFlippedCards([]);
   };
